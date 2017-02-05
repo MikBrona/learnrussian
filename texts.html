@@ -10,7 +10,7 @@
 	</head>
 <body>
 	<header>
-		<nav id="header-nav" class="navbar navbar-default">
+		<nav id="header-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
 	      <div class="container">
 	        <div class="navbar-header">
 	          <a href="index.html" class="pull-left visible-md visible-lg">
@@ -41,24 +41,24 @@
 			                <span class="glyphicon glyphicon-music"></span><br class="hidden-xs">Audio</a>
 			            </li>	
 			            <li>
-			              <a href="#">
+			              <a href="grammar.html">
 			                <span class="glyphicon glyphicon-education"></span><br class="hidden-xs">Grammar</a>
 			            </li>		            
 			            <li>
-			              <a href="menu-categories.html">
+			              <a href="#">
 			                <span class="glyphicon glyphicon-ok"></span><br class="hidden-xs">Excercises</a>
 			            </li>
 						<li>
-			              <a href="menu-categories.html">
+			              <a href="#">
 			                <span class="glyphicon glyphicon-link"></span><br class="hidden-xs">Links</a>
 			            </li>
-			            <li>
+			            <li id="navbar-active" class="active">
 			              <a href="texts.html">
-			                <span class="glyphicon glyphicon-file"></span><br class="hidden-xs">Texts</a>
+			                <span class="glyphicon glyphicon-file"></span><br class="hidden-xs">Texts</a><!--LOOK UP THE ACTIVE CLASS IN LECTURE 37 or so-->
 			            </li>
 			            <li>
 			              <a href="#">
-			                <span class="glyphicon glyphicon-film"></span><br class="hidden-xs">Videos</a>
+			              <span class="glyphicon glyphicon-globe"></span><br class="hidden-xs">Language</a>
 			            </li>
 			          </ul><!-- #nav-list -->
 			        </div><!-- .collapse .navbar-collapse -->
@@ -66,13 +66,29 @@
 			    </nav><!-- #header-nav -->
 			  </header>
 
-	<div class="container">
-	<div id="home-tiles" class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <a href="texts.html"><div id="texts-tile"><span>Texts</span></div></a>
-      </div>
-     </div>
 
+        <div id="main-content" class="container">
+    		<h2 id="texts-title" class="text-center">Texts / Тексты</h2>
+    			<div class="text-center">
+    				<ul id="texts-title-info">
+    					<li>All texts are free to download (.pdf).</li>
+    					<li>Hover the mouse over a phrase on the page to see the syntax.</li>
+    					<li>smth</li>
+    				</ul>
+    			</div>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Texts for Beginners
+    <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Vocabulary > 100 words</a></li>
+      <li><a href="#">Vocabulary > 250 words</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Intermediate</a></li>
+  <li><a href="#">Menu 3</a></li>
+</ul>
 
 	<section class="container" id="text-1">
 		<p>Владимир Путин поздравил Дональда Трампа с официальным вступлением в должность, пожелал успехов в предстоящей деятельности.</p>
