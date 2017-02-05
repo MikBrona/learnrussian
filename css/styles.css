@@ -2,7 +2,7 @@
 #header-nav {
   background-color: black;
   border-radius: 0;
-  border: 0;  	
+  border: 0;	
   }
 
 .navbar-brand {
@@ -12,7 +12,7 @@
 .navbar-brand h1 { /* Site name */
   font-family: 'Lora', serif;
   color: white;
-  font-size: 1.5em;
+  font-size: 2.5em;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
@@ -53,12 +53,17 @@
   clear: both;
   margin-top: -30px;
 }
+#navbar-active a { 
+  background: #5E3722!important }
+
   /* End Header */
 
-
 /* HOME PAGE */
+#home-page {
+  margin-top: 100px;
+}
 
-#texts-tile, #excercises-tile, #links-tile {
+#texts-tile, #excercises-tile, #links-tile, #alphabet-tile, #audio-tile, #videos-tile, #guides-tile, #grammar-tile, #vocabulary-tile {
   height: 250px;
   width: 100%;
   margin-bottom: 15px;
@@ -66,30 +71,49 @@
   border: 2px solid #3F0C1F;
   overflow: hidden;
 }
-#texts-tile:hover {
-  background: url('../images/texts_hover.png') no-repeat;
+
+
+
+#alphabet-tile {
+  background: url('../images/alphabet.png') no-repeat;
   background-position: center;
+}
+
+#alphabet-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#audio-tile {
+  background: url('../images/audio.png') no-repeat;
+  background-position: center;
+}
+
+#audio-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#guides-tile {
+  background: url('../images/guides.png') no-repeat;
+  background-position: center;
+}
+
+#guides-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-#links-tile:hover {
-  background: url('../images/links_hover.png') no-repeat;
+#grammar-tile {
+  background: url('../images/grammar.png') no-repeat;
   background-position: center;
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-#excercises-tile:hover {
-  background: url('../images/excercises_hover.png') no-repeat;
-  background-position: center;
-  box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-#texts-tile {
-  background: url('../images/texts.png') no-repeat;
-  background-position: center;
+#grammar-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
 }
 #excercises-tile {
-  background: url('../images/excercises.png') no-repeat;
+  background: url('../images/excercises2.png') no-repeat;
   background-position: center;
+}
+
+#excercises-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
 }
 
 #links-tile {
@@ -97,7 +121,38 @@
   background-position: center;
 }
 
-#texts-tile span, #excercises-tile span, #links-tile  span {
+#links-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#texts-tile {
+  background: url('../images/texts.png') no-repeat;
+  background-position: center;
+}
+
+#texts-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#videos-tile {  
+  background: url('../images/videos.png') no-repeat;
+  background-position: center;}
+
+#videos-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#vocabulary-tile {  
+  background: url('../images/vocabulary.png') no-repeat;
+  background-position: center;
+}
+
+#vocabulary-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+
+#alphabet-tile span, #audio-tile span, #guides-tile span, #grammar-tile span, #texts-tile span, #excercises-tile span, #links-tile  span,  #videos-tile span, #vocabulary-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -114,7 +169,7 @@
 
 /* FOOTER */
 .panel-footer {
-  margin-top: 30px;
+  margin-top: 10px;
   padding-top: 35px;
   padding-bottom: 30px;
   background-color: #222;
@@ -144,12 +199,30 @@
 
 
 /*TEXT-1*/
-#text-1 {
+#main-content {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: black;
+}
 
-
+#texts-title-info {
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
 }
 
 /*TEXT-1*/
+
+
+/*GRAMMAR*/
+#grammar-main-table {
+  border: 1px solid black;
+}
+
+.tab-content{
+  border: 2px solid black;
+}
+/*GRAMMAR*/
 
 /********** Large devices only **********/
 @media(min-width: 1200px) {
@@ -164,16 +237,18 @@
     }
   /* End Header */
 
+
   /* HOME PAGE */
 
-    #texts-tile, #excercises-tile, #links-tile {
-    width: 360px;
-    padding: 0px;
-    margin: 0 auto 15px;
-  }
   /* END HOME PAGE */
-}
 
+
+  /*TEXTS*/
+
+  /*END TEXTS*/
+
+
+}
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -196,9 +271,9 @@
   /* END HOME PAGE */
 
 
-  /* TEXSTS.HTML */
+/* TEXTS */
 
-  /* TEXSTS.HTML */
+/* END TEXTS */
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -216,12 +291,16 @@
 
    /* Home Page */
 
-    #texts-tile, #excercises-tile, #links-tile {
+    #audio-tile, #texts-tile, #excercises-tile, #links-tile, #alphabet-tile, #videos-tile, #guides-tile, #grammar-tile, #vocabulary-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
   /* End Home Page */
+  
 
+  /*TEXTS*/
+
+  /*END TEXTS*/
   }
 
 /********** Extra small devices only **********/
@@ -256,11 +335,16 @@
 
   /* Home Page */
 
-    #texts-tile, #excercises-tile, #links-tile {
+   #audio-tile, #texts-tile, #excercises-tile, #links-tile, #alphabet-tile, #videos-tile, #guides-tile, #grammar-tile, #vocabulary-tile  {
     width: 360px;
     margin: 0 auto 15px;
   }
   /* END HOME PAGE */
+
+/*TEXTS*/
+
+/*END TEXTS*/
+
 
     /* Footer */
   .panel-footer section {
@@ -274,4 +358,6 @@
     width: 50%;
   }
   /* End Footer */
+
+
 }
